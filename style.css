@@ -8,6 +8,7 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-color: cadetblue;
 }
 .container{
     display: flex;
@@ -24,7 +25,14 @@ body{
     flex-direction: column;
     gap: 20px;
 }
-button{
+/* button{
+    text-align: left;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+} */
+.btn{
     text-align: left;
     padding: 10px 20px;
     border: none;
@@ -34,11 +42,31 @@ button{
 h1{
     margin-bottom: 20px;
 }
-button:hover{
+#next-btn{
+    margin-top: 30px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    display: none;
+}
+#next-btn:hover{
     background-color: black;
     color: #ffff;
 }
-#next-btn{
-    margin-top: 30px;
+#options{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.correct{
+    background-color: green;
+    color: #ffff;
+}
+.incorrect{
+    background-color: red;
+    color: #ffff;
+}
+.hide{
     display: none;
 }
